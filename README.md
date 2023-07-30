@@ -1,6 +1,5 @@
-![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/429e1c63-1228-4f7e-8ad8-5b9c035e60fa)
+![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/429e1c63-1228-4f7e-8ad8-5b9c035e60fa) # Unicorn_Companies ![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/c6673877-223b-4095-b6fb-ac6c554d4240)
 
-# Unicorn_Companies
 
 Unicorn Companies Maven Analytics
 Private companies with a valuation over $1 billion as of March 2022, including each company's current valuation, funding, country of origin, industry, select investors, and the years they were founded and became unicorns.
