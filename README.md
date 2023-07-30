@@ -143,7 +143,7 @@ LIMIT 20;
 ![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/5d4c9501-53f9-48d9-a4bf-39171fa60b1b)
 
 
-Which investors have funded the most unicorns?
+Which investors have funded the most unicorns?                                                    
 Investors- Would be under the Select_Invesstors coulmn.                      
 Funding- Would be under the Funding coulmn.                                  
 * Find the total number of funding invested from each inverstor.
