@@ -91,5 +91,17 @@ LIMIT 10;
 
 
 How long does it usually take for a company to become a unicorn? Has it always been this way?
+Year the company was founded- Would be fould under the Year_Founded coulmn. 
+When the Company became a unicorn- Would be found under the Date_Joined.
+Find how long it takes for a company to become a Unicorn.
+* Date_Joined - Year_Founded = Years to join
+List by year Founded.
+```
+SELECT Year_Founded, Date_Joined, EXTRACT(YEAR FROM Date_Joined) - Year_Founded AS Years_to_Joined_Unicorn
+FROM `Unicorn_Companies_Dataset.Unicorn_Companies`
+ORDER BY Year_Founded;
+```
+*Query Results*
+Full Query Results found above or in link bellow:
 
 
