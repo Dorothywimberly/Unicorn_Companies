@@ -41,7 +41,7 @@ Clean and preprocess the collected data to ensure accuracy and consistency. This
 
 # Finding Solutions:
 
-Which unicorn companies have had the biggest return on investment?
+Which unicorn companies have had the biggest return on investment?                                             
 Unicorn Companies -  Would be idenified up under the Company coulmn in the Unicorn_Companies table.              
 Return on investment (ROI) - Use the investment data to calculate the ROI for each unicorn company.
 
