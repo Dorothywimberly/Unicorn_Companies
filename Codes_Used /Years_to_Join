@@ -1,3 +1,3 @@
-SELECT Year_Founded, Date_Joined, EXTRACT(YEAR FROM Date_Joined) - Year_Founded AS Years_to_Joined_Unicorn
+SELECT Year_Founded, Date_Joined, EXTRACT(YEAR FROM Date_Joined) - Year_Founded AS Years_to_Join
 FROM `Unicorn_Companies_Dataset.Unicorn_Companies`
 ORDER BY Year_Founded;
