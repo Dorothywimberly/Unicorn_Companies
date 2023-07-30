@@ -173,7 +173,11 @@ LIMIT 5;
 *Query Results*   
 ![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/842faab8-9c16-44ff-aa0b-f6d1aec037fe)
 
+# Visualize Results:
 
+# Interpret and Communicate Findings:
+
+# Draw Conclusions and Limitations:
 
 
 
