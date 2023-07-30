@@ -106,6 +106,8 @@ WHERE EXTRACT(YEAR FROM Date_Joined) >= Year_Founded
 /* Order by year founded */
 ORDER BY Year_Founded;
 ```
+* Find the Average number of years it takes to become a Unicorn company.                                      
+* List by the Year Founded.                                                                  
 ```
 /* Find the Average number of years it takes to become a Unicorn company and round the number*/
 SELECT
