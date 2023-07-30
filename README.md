@@ -97,8 +97,10 @@ Find how long it takes for a company to become a Unicorn.
 * Date_Joined - Year_Founded = Years to join
 List by year Founded.
 ```
-SELECT Year_Founded, Date_Joined, EXTRACT(YEAR FROM Date_Joined) - Year_Founded AS Years_to_Joined_Unicorn
+/* Extract year from Date Joined and subtract date joined from year founded */
+SELECT Year_Founded, Date_Joined, EXTRACT(YEAR FROM Date_Joined) - Year_Founded AS Years_to_Join
 FROM `Unicorn_Companies_Dataset.Unicorn_Companies`
+/* Order by year founded */
 ORDER BY Year_Founded;
 ```
 *Query Results*
