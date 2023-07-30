@@ -27,7 +27,7 @@ Which investors have funded the most unicorns?
 - Country: Country the company was founded in.
 - City: City the company was founded in.
 - Industry: Company industry.
-- Select Investors: Top 4 investing firms or individual investors (some have less than 4).
+- Select_Investors: Investors to the companies. *Top 4 investing firms or individual investors (some have less than 4).
 - Date_Joined: Company's became unicorns.
   *The date in which the company reached $1 billion in valuation.
 - Year_Founded: Year the company was founded.
@@ -106,5 +106,52 @@ ORDER BY Year_Founded;
 *Query Results*
 Full Query Results found above or in link bellow:                                        
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Years_to_Join.csv
+
+Which countries have the most unicorns? Are there any cities that appear to be industry hubs?   
+
+Countries- Would be fould under the Country coulmn.
+Unicorns- Would be under the Company coulmn. 
+* Count the number of companies in each Country.
+* Limit the number of Countries to 10.
+```
+/* Count number of Companies in each Country */
+SELECT Country, COUNT(*) AS NumberOfCompanies
+FROM `Unicorn_Companies_Dataset.Unicorn_Companies`
+GROUP BY Country
+/* List from hightest to lowest */
+ORDER BY NumberOfCompanies DESC
+LIMIT 10;
+```
+*Query Results*                                                                 
+![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/ab5b472e-b5a9-42ec-925d-0624b2103345)
+
+Unicorns- Would be under the Company coulmn. 
+Cities- Would be fould inder the city coulmn. 
+* Count the number of Companies in each City and remove Null cities. 
+* List the cities from highest to lowest and only show top 20 cities.
+```
+/* Count the number of Companies in each City and remove Null cities  */
+SELECT City, COUNT(*) AS NumberOfCompanies
+FROM `Unicorn_Companies_Dataset.Unicorn_Companies`
+WHERE City IS NOT NULL
+GROUP BY City
+/* List the cities from highest to lowest and only show top 20 cities.*/
+ORDER BY NumberOfCompanies DESC
+LIMIT 20;
+```
+*Query Results*                                                                           
+![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/5d4c9501-53f9-48d9-a4bf-39171fa60b1b)
+
+
+Which investors have funded the most unicorns?
+Investors- Would be under the Select_Invesstors coulmn. 
+Funding- Would be under the Funding coulmn. 
+* Find the total number of funding invested from each inverstor.
+```
+```
+*Query Results*   
+
+
+
 
 
