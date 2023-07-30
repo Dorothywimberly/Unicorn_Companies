@@ -102,7 +102,7 @@ FROM `Unicorn_Companies_Dataset.Unicorn_Companies`
 ORDER BY Year_Founded;
 ```
 *Query Results*
-Full Query Results found above or in link bellow:
+Full Query Results found above or in link bellow:                                        
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Years_to_Join.csv
 
 
