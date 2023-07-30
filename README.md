@@ -64,7 +64,7 @@ WITH TransformedData AS (
 
 # Finding Solutions:
 
-Which unicorn companies have had the biggest return on investment?                                             
+Which unicorn companies have had the biggest return on investment?                                                                 
 Unicorn Companies -  Would be idenified up under the Company coulmn in the Unicorn_Companies table.            
 Return on investment (ROI) - Use the investment data to calculate the ROI for each unicorn company.
 * ( Valuation - Funding) / Funding  * 100 = ROI                       
@@ -90,7 +90,7 @@ LIMIT 10;
 
 
 
-How long does it usually take for a company to become a unicorn? Has it always been this way?
+How long does it usually take for a company to become a unicorn? Has it always been this way?                 
 Year the company was founded- Would be fould under the Year_Founded coulmn. 
 When the Company became a unicorn- Would be found under the Date_Joined.
 Find how long it takes for a company to become a Unicorn.
