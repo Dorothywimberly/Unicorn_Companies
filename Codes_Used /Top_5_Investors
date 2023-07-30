@@ -1,0 +1,20 @@
+/* Change Strings to Floats, remove M, B, and $ symbols and Letters, change strings to floats, remove unknown and na*/
+WITH TransformedData AS (
+  SELECT
+    Select_Investors,
+    CASE
+      WHEN RIGHT(Funding, 1) = 'M' THEN CAST(SUBSTR(Funding, 2, LENGTH(Funding) - 2) AS FLOAT64) * 1000000
+      WHEN RIGHT(Funding, 1) = 'B' THEN CAST(SUBSTR(Funding, 2, LENGTH(Funding) - 2) AS FLOAT64) * 1000000000
+      WHEN REPLACE(Funding, '$', '') LIKE r'^[0-9]+$' THEN CAST(REPLACE(Funding, '$', '') AS FLOAT64)
+      ELSE 0
+    END AS Funding
+  FROM `Unicorn_Companies_Dataset.Unicorn_Companies`
+)
+/* List the Investors from highest to lowest and only show top 5 Invesrors.*/
+SELECT
+  Select_Investors,
+  SUM(Funding) AS TotalFunding
+FROM TransformedData
+GROUP BY Select_Investors
+ORDER BY TotalFunding DESC
+LIMIT 5;
