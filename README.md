@@ -15,16 +15,16 @@ Which investors have funded the most unicorns?
 
 # Variables
 
-- Company: Company name
-- Valuation: Company's current valuation                    	
- *Company valuation in billions (B) of dollars
+- Company: Company name.
+- Valuation: Company's current valuation.                    	
+ *Company valuation in billions (B) of dollars.
 - Funding: Total amount raised across all funding rounds in billions (B) or millions (M) of dollars.
 - Continent: Continent the company was founded in.
 - Country: Country the company was founded in.
 - City: City the company was founded in.
-- Industry: Company industry
+- Industry: Company industry.
 - Select Investors: Top 4 investing firms or individual investors (some have less than 4).
-- Date_Joined: Company's became unicorns
-  *The date in which the company reached $1 billion in valuation
+- Date_Joined: Company's became unicorns.
+  *The date in which the company reached $1 billion in valuation.
 - Year_Founded: Year the company was founded.
 
