@@ -15,9 +15,17 @@ Which investors have funded the most unicorns?
 
 # Variables
 
-- Company * Valuation + Date - Joined * Industry + City
-
-- Country * Continent + Year Founded - Funding * Select Investers
+- Company
+* Valuation
+* Date
+- Joined
+- Industry
++ City
+- Country
+- Continent
+- Year Founded
+- Funding
+- Select Investers
 
 SQL Syntax Results
 * All codes provided above. 
