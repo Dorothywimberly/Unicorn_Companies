@@ -1,4 +1,4 @@
-/* Change Strings to Floats, remove M, B, and $ symbols and Letters, change strings to floats, remove unknown and na*/
+/* Change Strings to Floats, remove M, B, and $ symbols and letters, change strings to floats, remove unknown and na*/
 WITH TransformedData AS (
   SELECT
     company,
