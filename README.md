@@ -106,6 +106,16 @@ WHERE EXTRACT(YEAR FROM Date_Joined) >= Year_Founded
 /* Order by year founded */
 ORDER BY Year_Founded;
 ```
+```
+/* Find the Average number of years it takes to become a Unicorn company and round the number*/
+SELECT
+  Year_Founded,
+  ROUND(AVG(EXTRACT(YEAR FROM Date_Joined) - Year_Founded), 2) AS Avg_Years_to_Join
+FROM `Unicorn_Companies_Dataset.Unicorn_Companies`
+/*Group the number by year and order it by year*/
+GROUP BY Year_Founded
+ORDER BY Year_Founded;
+```
 *Query Results*
 Full Query Results found above or in link bellow:                                        
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Years_to_Join.csv
