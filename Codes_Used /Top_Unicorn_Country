@@ -1,0 +1,7 @@
+/* Count number of Companies in each Country */
+SELECT Country, COUNT(*) AS NumberOfCompanies
+FROM `Unicorn_Companies_Dataset.Unicorn_Companies`
+GROUP BY Country
+/* List from hightest to lowest */
+ORDER BY NumberOfCompanies DESC
+LIMIT 10;
