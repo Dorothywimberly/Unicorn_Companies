@@ -66,8 +66,8 @@ WITH TransformedData AS (
 
 Which unicorn companies have had the biggest return on investment?                                                                 
 Unicorn Companies -  Would be idenified up under the Company coulmn in the Unicorn_Companies table.            
-Return on investment (ROI) - Use the investment data to calculate the ROI for each unicorn company.
-* ( Valuation - Funding) / Funding  * 100 = ROI                       
+Return on investment (ROI) - Use the investment data to calculate the ROI for each unicorn company.            
+* ( Valuation - Funding) / Funding  * 100 = ROI                                             
 Only list the top 10 companies. 
 ```
 /* Find the ROI for companies list from highest to lowest*/
@@ -90,12 +90,12 @@ LIMIT 10;
 
 
 
-How long does it usually take for a company to become a unicorn? Has it always been this way?                 
-Year the company was founded- Would be fould under the Year_Founded coulmn. 
-When the Company became a unicorn- Would be found under the Date_Joined.
-Find how long it takes for a company to become a Unicorn.
+How long does it usually take for a company to become a unicorn? Has it always been this way?                   
+Year the company was founded- Would be fould under the Year_Founded coulmn.                      
+When the Company became a unicorn- Would be found under the Date_Joined.                                     
+Find how long it takes for a company to become a Unicorn.                     
 * Date_Joined - Year_Founded = Years to join
-List by year Founded.
+* List by year Founded.
 ```
 /* Extract year from Date Joined and subtract date joined from year founded */
 SELECT Year_Founded, Date_Joined, EXTRACT(YEAR FROM Date_Joined) - Year_Founded AS Years_to_Join
@@ -107,12 +107,12 @@ ORDER BY Year_Founded;
 Full Query Results found above or in link bellow:                                        
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Years_to_Join.csv
 
-Which countries have the most unicorns? Are there any cities that appear to be industry hubs?   
+Which countries have the most unicorns? Are there any cities that appear to be industry hubs?                  
 
-Countries- Would be fould under the Country coulmn.
-Unicorns- Would be under the Company coulmn. 
+Countries- Would be fould under the Country coulmn.                                      
+Unicorns- Would be under the Company coulmn.                           
 * Count the number of companies in each Country.
-* Limit the number of Countries to 10.
+* Limit the number of Countries to 10.                    
 ```
 /* Count number of Companies in each Country */
 SELECT Country, COUNT(*) AS NumberOfCompanies
@@ -125,10 +125,10 @@ LIMIT 10;
 *Query Results*                                                                 
 ![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/ab5b472e-b5a9-42ec-925d-0624b2103345)
 
-Unicorns- Would be under the Company coulmn. 
-Cities- Would be fould inder the city coulmn. 
-* Count the number of Companies in each City and remove Null cities. 
-* List the cities from highest to lowest and only show top 20 cities.
+Unicorns- Would be under the Company coulmn.                                        
+Cities- Would be fould inder the city coulmn.                          
+* Count the number of Companies in each City and remove Null cities.                                
+* List the cities from highest to lowest and only show top 20 cities.                                  
 ```
 /* Count the number of Companies in each City and remove Null cities  */
 SELECT City, COUNT(*) AS NumberOfCompanies
@@ -144,12 +144,34 @@ LIMIT 20;
 
 
 Which investors have funded the most unicorns?
-Investors- Would be under the Select_Invesstors coulmn. 
-Funding- Would be under the Funding coulmn. 
+Investors- Would be under the Select_Invesstors coulmn.                      
+Funding- Would be under the Funding coulmn.                                  
 * Find the total number of funding invested from each inverstor.
+* List the top 5 investors. 
 ```
+/* Change Strings to Floats, remove M, B, and $ symbols and Letters, change strings to floats, remove unknown and na*/
+WITH TransformedData AS (
+  SELECT
+    Select_Investors,
+    CASE
+      WHEN RIGHT(Funding, 1) = 'M' THEN CAST(SUBSTR(Funding, 2, LENGTH(Funding) - 2) AS FLOAT64) * 1000000
+      WHEN RIGHT(Funding, 1) = 'B' THEN CAST(SUBSTR(Funding, 2, LENGTH(Funding) - 2) AS FLOAT64) * 1000000000
+      WHEN REPLACE(Funding, '$', '') LIKE r'^[0-9]+$' THEN CAST(REPLACE(Funding, '$', '') AS FLOAT64)
+      ELSE 0
+    END AS Funding
+  FROM `Unicorn_Companies_Dataset.Unicorn_Companies`
+)
+/* List the Investors from highest to lowest and only show top 5 Invesrors.*/
+SELECT
+  Select_Investors,
+  SUM(Funding) AS TotalFunding
+FROM TransformedData
+GROUP BY Select_Investors
+ORDER BY TotalFunding DESC
+LIMIT 5;
 ```
 *Query Results*   
+![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/842faab8-9c16-44ff-aa0b-f6d1aec037fe)
 
 
 
