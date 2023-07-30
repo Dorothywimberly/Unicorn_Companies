@@ -1,3 +1,5 @@
+![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/429e1c63-1228-4f7e-8ad8-5b9c035e60fa)
+
 # Unicorn_Companies
 
 Unicorn Companies Maven Analytics
