@@ -9,13 +9,13 @@ Private companies with a valuation over $1 billion as of March 2022, including e
 
 # Objective:
 
-Which unicorn companies have had the biggest return on investment?
+1. Which unicorn companies have had the biggest return on investment?
 
-How long does it usually take for a company to become a unicorn? Has it always been this way?
+2. How long does it usually take for a company to become a unicorn? Has it always been this way?
 
-Which countries have the most unicorns? Are there any cities that appear to be industry hubs?
+3. Which countries have the most unicorns? Are there any cities that appear to be industry hubs?
 
-Which investors have funded the most unicorns?
+4. Which investors have funded the most unicorns?
 
 # Variables:
 
@@ -90,7 +90,7 @@ LIMIT 10;
 
 
 
-1. How long does it usually take for a company to become a unicorn? Has it always been this way?                   
+2. How long does it usually take for a company to become a unicorn? Has it always been this way?                   
 Year the company was founded- Would be fould under the Year_Founded coulmn.                      
 When the Company became a unicorn- Would be found under the Date_Joined.                                     
 Find how long it takes for a company to become a Unicorn.                     
@@ -107,7 +107,7 @@ ORDER BY Year_Founded;
 Full Query Results found above or in link bellow:                                        
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Years_to_Join.csv
 
-1. Which countries have the most unicorns? Are there any cities that appear to be industry hubs?                  
+3. Which countries have the most unicorns? Are there any cities that appear to be industry hubs?                  
 
 Countries- Would be fould under the Country coulmn.                                      
 Unicorns- Would be under the Company coulmn.                           
@@ -143,7 +143,7 @@ LIMIT 20;
 ![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/5d4c9501-53f9-48d9-a4bf-39171fa60b1b)
 
 
-1. Which investors have funded the most unicorns?                                                    
+4. Which investors have funded the most unicorns?                                                    
 Investors- Would be under the Select_Invesstors coulmn.                      
 Funding- Would be under the Funding coulmn.                                  
 * Find the total number of funding invested from each inverstor.
