@@ -85,7 +85,7 @@ FROM TransformedData
 ORDER BY ROI DESC
 LIMIT 10;
 ```
-* Query Results *
+*Query Results*
 ![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/db6e0972-e4cd-419d-9f9d-ea730451cf7b)
 
 
