@@ -39,9 +39,48 @@ https://mavenanalytics.io/data-playground?search=unicorn
 # Data Cleaning and Preprocessing:
 Clean and preprocess the collected data to ensure accuracy and consistency. This step involves handling missing values, removing duplicates, and formatting data in a standardized manner.
 
+```
+/* Change Strings to Floats, remove M, B, and $ symbols and Letters, change strings to floats, remove unknown and na*/
+WITH TransformedData AS (
+  SELECT
+    company,
+    Country,
+    CASE
+      WHEN Valuation = 'unknown' THEN NULL
+      WHEN RIGHT(Valuation, 1) = 'M' THEN CAST(SUBSTR(Valuation, 2, LENGTH(Valuation) - 2) AS FLOAT64) * 1000000
+      WHEN RIGHT(Valuation, 1) = 'B' THEN CAST(SUBSTR(Valuation, 2, LENGTH(Valuation) - 2) AS FLOAT64) * 1000000000
+      WHEN REPLACE(Valuation, '$', '') LIKE r'^[0-9]+$' THEN CAST(REPLACE(Valuation, '$', '') AS FLOAT64)
+      ELSE 0
+    END AS Valuation,
+    CASE
+      WHEN Funding = 'unknown' THEN NULL
+      WHEN RIGHT(Funding, 1) = 'M' THEN CAST(SUBSTR(Funding, 2, LENGTH(Funding) - 2) AS FLOAT64) * 1000000
+      WHEN RIGHT(Funding, 1) = 'B' THEN CAST(SUBSTR(Funding, 2, LENGTH(Funding) - 2) AS FLOAT64) * 1000000000
+      WHEN REPLACE(Funding, '$', '') LIKE r'^[0-9]+$' THEN CAST(REPLACE(Funding, '$', '') AS FLOAT64)
+      ELSE 0
+    END AS Funding
+  FROM `Unicorn_Companies_Dataset.Unicorn_Companies`
+```
+
 # Finding Solutions:
 
 Which unicorn companies have had the biggest return on investment?                                             
-Unicorn Companies -  Would be idenified up under the Company coulmn in the Unicorn_Companies table.              
+Unicorn Companies -  Would be idenified up under the Company coulmn in the Unicorn_Companies table.            
 Return on investment (ROI) - Use the investment data to calculate the ROI for each unicorn company.
+* ( Valuation - Funding) /  * 100
+```
+/* Find the ROI for companies list from highest to lowest*/
+SELECT
+  Valuation,
+  Funding,
+  Company,
+  Country,
+  CASE
+    WHEN Valuation = 0 THEN NULL
+    WHEN Funding = 0 THEN NULL
+    ELSE ROUND((Valuation - Funding) / Funding) * 100
+  END AS ROI
+FROM TransformedData
+ORDER BY ROI DESC;
+```
 
