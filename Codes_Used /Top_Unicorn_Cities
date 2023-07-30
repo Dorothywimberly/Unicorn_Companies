@@ -1,0 +1,8 @@
+/* Count the number of Companies in each City and remove Null cities  */
+SELECT City, COUNT(*) AS NumberOfCompanies
+FROM `Unicorn_Companies_Dataset.Unicorn_Companies`
+WHERE City IS NOT NULL
+GROUP BY City
+/* List the cities from highest to lowest and only show top 20 cities.*/
+ORDER BY NumberOfCompanies DESC
+LIMIT 20;
