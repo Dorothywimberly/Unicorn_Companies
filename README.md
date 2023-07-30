@@ -28,4 +28,4 @@ Which investors have funded the most unicorns?
 - Select Investers
 
 SQL Syntax Results
-* All codes provided above. 
+
