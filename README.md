@@ -85,4 +85,11 @@ FROM TransformedData
 ORDER BY ROI DESC
 LIMIT 10;
 ```
+* Query Results *
+![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/db6e0972-e4cd-419d-9f9d-ea730451cf7b)
+
+
+
+How long does it usually take for a company to become a unicorn? Has it always been this way?
+
 
