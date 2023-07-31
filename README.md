@@ -197,6 +197,11 @@ https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Top_5_Investors.c
 
 # Visualize Results:
 
+![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/1c6dadc4-1ca5-498e-900e-e19c51887c91)
+![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/f362b992-0b0c-4ab6-8180-f50bd14907be)
+![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/7079083c-e07d-4e1f-b2fb-c9aadf97e1ca)
+
+
 # Interpret and Communicate Findings:
 
 # Draw Conclusions and Limitations:
