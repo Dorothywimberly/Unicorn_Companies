@@ -121,7 +121,7 @@ ORDER BY Year_Founded;
 *Query Results*
 Full Query Results found above or in link bellow:                                        
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Years_to_Join.csv                                 
-https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Years_to_Join.csv
+[https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Years_to_Join.csv](https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Avg_Years_To_Join.csv)
 
 3. Which countries have the most unicorns? Are there any cities that appear to be industry hubs?                  
 Countries- Would be found under the Country column.
