@@ -66,7 +66,7 @@ WITH TransformedData AS (
 # Finding Solutions:
 
 1. Which unicorn companies have had the biggest return on investment?                                                                 
-Unicorn Companies -  Would be idenified up under the Company coulmn in the Unicorn_Companies table.            
+Unicorn Companies -  Would be identified up under the Company column in the Unicorn_Companies table.            
 Return on investment (ROI) - Use the investment data to calculate the ROI for each unicorn company.            
 * ( Valuation - Funding) / Funding  * 100 = ROI                                             
 Only list the top 10 companies. 
@@ -91,10 +91,10 @@ Full Query Results found above or in link bellow:
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Top_ROI_Unicorn.csv
 
 
-2. How long does it usually take for a company to become a unicorn? Has it always been this way?                   
-Year the company was founded- Would be fould under the Year_Founded coulmn.                      
-When the Company became a unicorn- Would be found under the Date_Joined.                                     
-Find how long it takes for a company to become a Unicorn.                     
+2.	How long does it usually take for a company to become a unicorn? Has it always been this way?
+Year the company was founded- Would be found under the Year_Founded column.
+When the Company became a unicorn- Would be found under the Date_Joined.
+Find how long it takes for a company to become a Unicorn.                                       
 * Date_Joined - Year_Founded = Years to join
 * Remove any year joined that come out to be a negative value.
 * List by year Founded.
@@ -124,9 +124,8 @@ https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Years_to_Join.csv
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Years_to_Join.csv
 
 3. Which countries have the most unicorns? Are there any cities that appear to be industry hubs?                  
-
-Countries- Would be fould under the Country coulmn.                                      
-Unicorns- Would be under the Company coulmn.                           
+Countries- Would be found under the Country column.
+Unicorns- Would be under the Company column.                        
 * Count the number of companies in each Country.
 * Limit the number of Countries to 10.                    
 ```
@@ -143,10 +142,12 @@ Full Query Results found above or in link bellow:
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Top_Unicorn_Country.csv
 
 
-Unicorns- Would be under the Company coulmn.                                        
-Cities- Would be fould inder the city coulmn.                          
-* Count the number of Companies in each City and remove Null cities.                                
-* List the cities from highest to lowest and only show top 20 cities.                                  
+Unicorns- Would be under the Company column.                                        
+Cities- Would be found under the city column.                                                  
+* Count the number of Companies in each City and remove Null cities.
+*	List the cities from highest to lowest and only show top 20 cities.
+
+                               
 ```
 /* Count the number of Companies in each City and remove Null cities  */
 SELECT City, COUNT(*) AS NumberOfCompanies
@@ -161,11 +162,12 @@ LIMIT 20;
 Full Query Results found above or in link bellow:     
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Top_Unicorn_Cities.csv
 
-4. Which investors have funded the most unicorns?                                                    
-Investors- Would be under the Select_Invesstors coulmn.                      
-Funding- Would be under the Funding coulmn.                                  
-* Find the total number of funding invested from each inverstor.
-* List the top 5 investors. 
+4. 4.	Which investors have funded the most unicorns?
+Investors- Would be under the Select_Invesstors column.
+Funding- Would be under the Funding column.
+*	Find the total number of funding invested from each investor.
+*	List the top 5 investors.
+
 ```
 /* Change Strings to Floats, remove M, B, and $ symbols and Letters, change strings to floats, remove unknown and na*/
 WITH TransformedData AS (
