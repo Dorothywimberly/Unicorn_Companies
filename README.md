@@ -91,10 +91,10 @@ Full Query Results found above or in link bellow:
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Top_ROI_Unicorn.csv
 
 
-2.	How long does it usually take for a company to become a unicorn? Has it always been this way?
-Year the company was founded- Would be found under the Year_Founded column.
-When the Company became a unicorn- Would be found under the Date_Joined.
-Find how long it takes for a company to become a Unicorn.                                       
+2.	How long does it usually take for a company to become a unicorn? Has it always been this way?                     
+Year the company was founded- Would be found under the Year_Founded column.                                      
+When the Company became a unicorn- Would be found under the Date_Joined.                                          
+Find how long it takes for a company to become a Unicorn.                                                            
 * Date_Joined - Year_Founded = Years to join
 * Remove any year joined that come out to be a negative value.
 * List by year Founded.
@@ -162,11 +162,11 @@ LIMIT 20;
 Full Query Results found above or in link bellow:     
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Top_Unicorn_Cities.csv
 
-4. 4.	Which investors have funded the most unicorns?
-Investors- Would be under the Select_Invesstors column.
-Funding- Would be under the Funding column.
-*	Find the total number of funding invested from each investor.
-*	List the top 5 investors.
+4. 4.	Which investors have funded the most unicorns?                                      
+Investors- Would be under the Select_Invesstors column.                                                
+Funding- Would be under the Funding column.                                              
+*	Find the total number of funding invested from each investor.                                              
+*	List the top 5 investors.                                                                           
 
 ```
 /* Change Strings to Floats, remove M, B, and $ symbols and Letters, change strings to floats, remove unknown and na*/
