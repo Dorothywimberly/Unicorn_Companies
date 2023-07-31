@@ -162,7 +162,7 @@ LIMIT 20;
 Full Query Results found above or in link bellow:     
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Top_Unicorn_Cities.csv
 
-4. 4.	Which investors have funded the most unicorns?                                      
+4. Which investors have funded the most unicorns?                                      
 Investors- Would be under the Select_Invesstors column.                                                
 Funding- Would be under the Funding column.                                              
 *	Find the total number of funding invested from each investor.                                              
