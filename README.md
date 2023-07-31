@@ -87,8 +87,8 @@ ORDER BY ROI DESC
 LIMIT 10;
 ```
 *Query Results*
-![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/db6e0972-e4cd-419d-9f9d-ea730451cf7b)
-
+Full Query Results found above or in link bellow:                        
+https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Top_ROI_Unicorn.csv
 
 
 2. How long does it usually take for a company to become a unicorn? Has it always been this way?                   
@@ -120,6 +120,7 @@ ORDER BY Year_Founded;
 ```
 *Query Results*
 Full Query Results found above or in link bellow:                                        
+https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Years_to_Join.csv                                 
 https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Years_to_Join.csv
 
 3. Which countries have the most unicorns? Are there any cities that appear to be industry hubs?                  
@@ -137,8 +138,10 @@ GROUP BY Country
 ORDER BY NumberOfCompanies DESC
 LIMIT 10;
 ```
-*Query Results*                                                                 
-![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/ab5b472e-b5a9-42ec-925d-0624b2103345)
+*Query Results*
+Full Query Results found above or in link bellow:                                
+https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Top_Unicorn_Country.csv
+
 
 Unicorns- Would be under the Company coulmn.                                        
 Cities- Would be fould inder the city coulmn.                          
@@ -154,9 +157,9 @@ GROUP BY City
 ORDER BY NumberOfCompanies DESC
 LIMIT 20;
 ```
-*Query Results*                                                                           
-![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/5d4c9501-53f9-48d9-a4bf-39171fa60b1b)
-
+*Query Results*
+Full Query Results found above or in link bellow:     
+https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Top_Unicorn_Cities.csv
 
 4. Which investors have funded the most unicorns?                                                    
 Investors- Would be under the Select_Invesstors coulmn.                      
@@ -185,8 +188,10 @@ GROUP BY Select_Investors
 ORDER BY TotalFunding DESC
 LIMIT 5;
 ```
-*Query Results*   
-![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/842faab8-9c16-44ff-aa0b-f6d1aec037fe)
+
+*Query Results*
+Full Query Results found above or in link bellow:     
+https://github.com/Dorothywimberly/Unicorn_Companies/blob/main/Top_5_Investors.csv
 
 # Visualize Results:
 
