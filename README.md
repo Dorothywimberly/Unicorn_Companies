@@ -1,6 +1,6 @@
-![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/429e1c63-1228-4f7e-8ad8-5b9c035e60fa) 
-![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/742f12b4-4ad5-456c-9136-92f64933ba7d)
-![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/429e1c63-1228-4f7e-8ad8-5b9c035e60fa)
+![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/1b420e9f-04ed-4973-99c6-da3a45b9144e)
+![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/d570ce37-8e1b-4245-8bc5-32aa8fd93c9c)
+![image](https://github.com/Dorothywimberly/Unicorn_Companies/assets/131917095/971a62bc-9ef1-4e47-9efb-3913ab241eeb)
 
 # Unicorn_Companies
 
